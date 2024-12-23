@@ -19,4 +19,36 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById(productId).classList.add('active');
         });
     });
+
+    // 添加图片点击放大功能
+    const modal = document.createElement('div');
+    modal.className = 'image-modal';
+    modal.style.display = 'none';  // 确保初始状态为隐藏
+    const modalImg = document.createElement('img');
+    modal.appendChild(modalImg);
+    document.body.appendChild(modal);
+
+    // 为所有产品图片添加点击事件
+    document.querySelectorAll('.product-info img').forEach(img => {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function() {
+            modal.style.display = 'block';
+            modalImg.src = this.src;
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    // 点击模态框关闭
+    modal.addEventListener('click', function() {
+        this.style.display = 'none';
+        document.body.style.overflow = '';
+    });
+
+    // 添加ESC键关闭功能
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+    });
 }); 

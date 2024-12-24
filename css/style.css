@@ -364,7 +364,7 @@ footer {
 /* 下载区域样式 */
 .download-section {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     margin: 20px 0;
 }
 
@@ -426,7 +426,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 80%;  /* 控制图片最大宽度 */
+    max-width: 80%;  /* ��制图片最大宽度 */
     max-height: 80vh;  /* 控制图片最大高度 */
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
@@ -546,4 +546,25 @@ footer {
     0% { transform: translateX(0); }
     50% { transform: translateX(-10px); }
     100% { transform: translateX(0); }
+} 
+
+.custom-button {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    background: #ff6b6b;  /* 不同的颜色区分 */
+    color: white;
+}
+
+.custom-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* 调整按钮间距 */
+.download-section {
+    gap: 15px;  /* 减小间距使三个按钮能排在一行 */
 } 

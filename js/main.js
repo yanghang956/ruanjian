@@ -9,7 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // 为每个菜单项添加点击事件
     menuItems.forEach(item => {
         item.addEventListener('click', function() {
-            // 移除所有active类
+            // 移除所有菜单项的active类
+            menuItems.forEach(menuItem => menuItem.classList.remove('active'));
+            // 给当前点击的菜单项添加active类
+            this.classList.add('active');
+            
+            // 移除所有产品详情的active类
             productDetails.forEach(detail => detail.classList.remove('active'));
             welcomeSection.classList.remove('active');
             

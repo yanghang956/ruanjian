@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>启航软件 - 专业的AI软件解决方案提供商</title>
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="./css/style.css" as="style">
+    <link rel="preload" href="./images/logo-icon.png" as="image">
+    
     <link rel="stylesheet" href="./css/style.css">
     <!-- 引入字体图标 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
@@ -70,644 +75,641 @@
                 <!-- 左侧菜单 -->
                 <div class="product-menu">
                     <ul>
-
-                            <li data-product="product1">
-                                <i class="fas fa-angle-right"></i>
-                                Deepseek文章改写软件
-                            </li>
-
-                            <li data-product="product2">
-                                <i class="fas fa-angle-right"></i>
-                                数字人短视频软件
-                            </li>
-
-                            <li data-product="product3">
-                                <i class="fas fa-angle-right"></i>
-                                POE官网采集改写软件
-                            </li>
-
-                            <li data-product="product4">
-                                <i class="fas fa-angle-right"></i>
-                                Per官网采集改写软件
-                            </li>
-
-                            <li data-product="product5">
-                                <i class="fas fa-angle-right"></i>
-                                GPT官网采集改写软件
-                            </li>
-
-                            <li data-product="product6">
-                                <i class="fas fa-angle-right"></i>
-                                头条搜狐文章下载软件
-                            </li>
-
-                            <li data-product="product7">
-                                <i class="fas fa-angle-right"></i>
-                                GPT批量改写本地文章软件
-                            </li>
-
-                            <li data-product="product8">
-                                <i class="fas fa-angle-right"></i>
-                                poe 本地改写文章软件
-                            </li>
-
-                            <li data-product="product9">
-                                <i class="fas fa-angle-right"></i>
-                                百家号文章采集工具
-                            </li>
-
-                            <li data-product="product10">
-                                <i class="fas fa-angle-right"></i>
-                                批量下载头条首页分类文章软件
-                            </li>
-
-                            <li data-product="product11">
-                                <i class="fas fa-angle-right"></i>
-                                文章和视频标题检测工具
-                            </li>
-
-                            <li data-product="product12">
-                                <i class="fas fa-angle-right"></i>
-                                poe批量修改文章标题软件
-                            </li>
-
-                            <li data-product="product13">
-                                <i class="fas fa-angle-right"></i>
-                                微头条批量采集改写发布软件
-                            </li>
-
-                            <li data-product="product14">
-                                <i class="fas fa-angle-right"></i>
-                                批量改写视频标题软件
-                            </li>
-
-                            <li data-product="product15">
-                                <i class="fas fa-angle-right"></i>
-                                批量改写文章标题软件
-                            </li>
-
-                            <li data-product="product16">
-                                <i class="fas fa-angle-right"></i>
-                                批量标题生成文章
-                            </li>
-
-                            <li data-product="product17">
-                                <i class="fas fa-angle-right"></i>
-                                易撰接口原创度批量检测
-                            </li>
-
-                            <li data-product="product18">
-                                <i class="fas fa-angle-right"></i>
-                                罐头自媒体批量ck登录软件
-                            </li>
-
-                            <li data-product="product19">
-                                <i class="fas fa-angle-right"></i>
-                                小火花ck提取软件
-                            </li>
-
-                            <li data-product="product20">
-                                <i class="fas fa-angle-right"></i>
-                                百家号图文发布软件
-                            </li>
-
-                            <li data-product="product21">
-                                <i class="fas fa-angle-right"></i>
-                                头条号图文发布软件
-                            </li>
-
-                            <li data-product="product22">
-                                <i class="fas fa-angle-right"></i>
-                                批量原创视频软件
-                            </li></ul>
+                        <li data-product="product1">
+                            <i class="fas fa-angle-right"></i>
+                            Deepseek文章改写软件
+                        </li>
+                        <li data-product="product2">
+                            <i class="fas fa-angle-right"></i>
+                            数字人短视频软件
+                        </li>
+                        <li data-product="product3">
+                            <i class="fas fa-angle-right"></i>
+                            POE官网采集改写软件
+                        </li>
+                        <li data-product="product4">
+                            <i class="fas fa-angle-right"></i>
+                            Per官网采集改写软件
+                        </li>
+                        <li data-product="product5">
+                            <i class="fas fa-angle-right"></i>
+                            GPT官网采集改写软件
+                        </li>
+                        <li data-product="product6">
+                            <i class="fas fa-angle-right"></i>
+                            头条搜狐文章下载软件
+                        </li>
+                        <li data-product="product7">
+                            <i class="fas fa-angle-right"></i>
+                            GPT批量改写本地文章软件
+                        </li>
+                        <li data-product="product8">
+                            <i class="fas fa-angle-right"></i>
+                            poe本地改写文章软件
+                        </li>
+                        <li data-product="product9">
+                            <i class="fas fa-angle-right"></i>
+                            百家号文章采集工具
+                        </li>
+                        <li data-product="product10">
+                            <i class="fas fa-angle-right"></i>
+                            批量下载头条首页分类文章软件
+                        </li>
+                        <li data-product="product11">
+                            <i class="fas fa-angle-right"></i>
+                            文章和视频标题检测工具
+                        </li>
+                        <li data-product="product12">
+                            <i class="fas fa-angle-right"></i>
+                            poe批量修改文章标题软件
+                        </li>
+                        <li data-product="product13">
+                            <i class="fas fa-angle-right"></i>
+                            微头条批量采集改写发布软件
+                        </li>
+                        <li data-product="product14">
+                            <i class="fas fa-angle-right"></i>
+                            批量改写视频标题软件
+                        </li>
+                        <li data-product="product15">
+                            <i class="fas fa-angle-right"></i>
+                            批量改写文章标题软件
+                        </li>
+                        <li data-product="product16">
+                            <i class="fas fa-angle-right"></i>
+                            批量标题生成文章
+                        </li>
+                        <li data-product="product17">
+                            <i class="fas fa-angle-right"></i>
+                            易撰接口原创度批量检测
+                        </li>
+                        <li data-product="product18">
+                            <i class="fas fa-angle-right"></i>
+                            罐头自媒体批量ck登录软件
+                        </li>
+                        <li data-product="product19">
+                            <i class="fas fa-angle-right"></i>
+                            小火花ck提取软件
+                        </li>
+                        <li data-product="product20">
+                            <i class="fas fa-angle-right"></i>
+                            百家号图文发布软件
+                        </li>
+                        <li data-product="product21">
+                            <i class="fas fa-angle-right"></i>
+                            头条号图文发布软件
+                        </li>
+                        <li data-product="product22">
+                            <i class="fas fa-angle-right"></i>
+                            批量原创视频软件
+                        </li>
+                    </ul>
                 </div>
                 
                 <!-- 右侧详情 -->
-                                                                                <div class="product-details">
-                        <div class="product-welcome active">
-                            <h3>专注AI软件开发，助力自媒体创作</h3>
-                            <p>为您提供专业的内容采集、智能改写、发布管理解决方案</p>
-                            <div class="welcome-hint">
-                                <i class="fas fa-arrow-left"></i>
-                                <span>点击左侧菜单了解软件详情</span>
+                <div class="product-details">
+                    <div class="product-welcome active">
+                        <h3>专注AI软件开发，助力自媒体创作</h3>
+                        <p>为您提供专业的内容采集、智能改写、发布管理解决方案</p>
+                        <div class="welcome-hint">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>点击左侧菜单了解软件详情</span>
+                        </div>
+                    </div>
+
+                    <!-- Product 1 -->
+                    <div class="product-detail" id="product1">
+                        <h3>Deepseek文章改写软件</h3>
+                        <div class="download-section">
+                            <a href="https://wwzg.lanzouq.com/b00rnliz8j" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>最强大的Deepseek文章改写软件上线</li>
+                                <li>1.支持本地 Word 文章批量改写，可自定义输入输出目录，多线程处理提升效率。</li>
+                                <li>2.集成满血版 Deepseek 等多种模型，支持市面所有的主流模型，支持本地模型（需电脑配置，调用无费用），文章生成大纲、内容及标题改写环节均可自定义选用模型。</li>
+                                <li>3.能对文章图片进行裁剪、去水印处理。</li>
+                                <li>4.所有改写步骤都可自定义指令，精准满足不同改写需求。</li>
+                                <li>5.可设置处理完成后自动删除源文件、清理临时文件。</li>
+                                <li>6.能按自定义字数跳过过短文章，按自定义尺寸跳过过小图片。</li>
+                                <li>7.支持自定义屏蔽词设置，灵活过滤文章特定词汇。</li>
+                                <img src="./images/Deepseek文章改写软件1.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/Deepseek文章改写软件2.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/Deepseek文章改写软件3.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/Deepseek文章改写软件4.jpg" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-detail" id="product2">
+                        <h3>数字人短视频软件</h3>
+                        <div class="download-section">
+                            <a href="javascript:void(0)" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>数字人软件重磅来袭</li>
+                                <li>1.效果最逼真的数字人，极速生成口播视频</li>
+                                <li>2.只需要30秒视频上传就可定制专属数字人形象</li>
+                                <li>3.输入文案或者输入音频就可生成定制的数字人视频</li>
+                                <li>4.一次部署，永久免费使用，生成的视频都无需任何费用</li>
+                                <li>5.电脑配置要求：i5-12400 3050以上显卡 32G以上内存</li>
+                                <li>配置越好，生成的视频速度越快，上面的配置生成1分钟的视频需要10分钟左右</li>
+                                <img src="./images/数字人1.png" alt="软件截图" loading="lazy">
+                                <img src="./images/数字人2.png" alt="软件截图" loading="lazy">
+                                <img src="./images/数字人3.png" alt="软件截图" loading="lazy">
+                                <img src="./images/数字人4.png" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-detail" id="product3">
+                        <h3>POE官网采集改写软件</h3>
+                        <div class="download-section">
+                            <a href="https://pan.baidu.com/s/1DYtRvkX0msIJkDVkDY2BrQ?pwd=5f64" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>可以线程处理，一天处理几千几万篇文章，解放你的双手</li>
+                                <li>支持市面上主流AI模型：</li>
+                                <li>- GPT3.5/GPT4.0</li>
+                                <li>- 通义千问</li>
+                                <li>- Claude-3-Sonnet/Claude-3-Haiku</li>
+                                <li>- Web-Search/Assistant</li>
+                                <li>文章相似度智能检测，改写文章与原文对比，可设置相似度阈值</li>
+                                <li>专业文章排版功能，全文宋体设置，重点内容加粗颜色</li>
+                                <img src="./images/poe1.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/poe2.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/poe3.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/poe4.jpg" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                                        <!-- Product 4 -->
+                                        <div class="product-detail" id="product4">
+                                            <h3>Per官网采集改写软件</h3>
+                                            <div class="download-section">
+                                                <a href="https://pan.quark.cn/s/f56891e3bdf7" class="download-button">软件下载</a>
+                                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                                <a href="#contact" class="custom-button">软件定制</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h4>功能特点：</h4>
+                                                <ul>
+                                                    <li>超低成本，每天600次对话配额，相于POE和GPT官网六分之一费用</li>
+                                                    <li>支持顶级AI模型：</li>
+                                                    <li>- Claude 3.5 Sonnet</li>
+                                                    <li>- GPT-4</li>
+                                                    <li>- Claude 3 Opus</li>
+                                                    <li>- Llama 3.1 405B</li>
+                                                    <li>文章相似度智能检测，可设置相似度阈值过滤</li>
+                                                    <li>专业排版功能，支持字体设置重点内容样式定制</li>
+                                                    <img src="./images/per1.jpg" alt="软件截图" loading="lazy">
+                                                    <img src="./images/per2.jpg" alt="软件截图" loading="lazy">
+                                                </ul>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Product 5 -->
+                                        <div class="product-detail" id="product5">
+                                            <h3>GPT官网采集改写软件</h3>
+                                            <div class="download-section">
+                                                <a href="javascript:void(0)" class="download-button">软件下载</a>
+                                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                                <a href="#contact" class="custom-button">软件定制</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h4>功能特点：</h4>
+                                                <ul>
+                                                    <li>输入头条搜狐微信公众号链接，自动采集图片文章</li>
+                                                    <li>驱动浏览器访问gpt官网在网页端改写数据，保存成docx</li>
+                                                    <li>对接gpt官网运行，支持gpt4o以及最新模型</li>
+                                                    <li>可设置篇头篇尾</li>
+                                                    <li>可设置屏蔽词，可多线程运行</li>
+                                                    <img src="./images/GPT官网采集改写软件.jpg" alt="软件截图" loading="lazy">
+                                                </ul>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Product 6 -->
+                                        <div class="product-detail" id="product6">
+                                            <h3>头条搜狐文章下载软件</h3>
+                                            <div class="download-section">
+                                                <a href="https://wwzg.lanzouq.com/b00rnliz9a" class="download-button">软件下载</a>
+                                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                                <a href="#contact" class="custom-button">软件定制</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h4>功能特点：</h4>
+                                                <ul>
+                                                    <li>批量采集头条号搜狐号的图文</li>
+                                                    <li>放入链接就可以批量采集</li>
+                                                    <li>保存图文和文章为docx格式</li>
+                                                    <li>快速采集，100篇2分钟采集完成</li>
+                                                    <img src="./images/采集头条1.png" alt="软件截图" loading="lazy">
+                                                    <img src="./images/采集头条2.png" alt="软件截图" loading="lazy">
+                                                    <img src="./images/采集头条3.png" alt="软件截图" loading="lazy">
+                                                </ul>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Product 7 -->
+                                        <div class="product-detail" id="product7">
+                                            <h3>GPT批量改写本地文章软件</h3>
+                                            <div class="download-section">
+                                                <a href="https://pan.quark.cn/s/e341afb4617d" class="download-button">软件下载</a>
+                                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                                <a href="#contact" class="custom-button">软件定制</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h4>功能特点：</h4>
+                                                <ul>
+                                                    <li>支持txt、docx、pdf等多种格式文件批量导入</li>
+                                                    <li>支持GPT3.5/4.0等多个模型</li>
+                                                    <li>可自定义改写提示词和改写风格</li>
+                                                    <li>多线程并发处理，提高改写效率</li>
+                                                    <li>支持相似度检测，确保文章原创性</li>
+                                                    <li>支持批量导出Word文档</li>
+                                                    <img src="./images/gpt本地文章1.jpg" alt="软件截图" loading="lazy">
+                                                    <img src="./images/gpt本地文章2.jpg" alt="软件截图" loading="lazy">
+                                                    <img src="./images/gpt本地文章3.jpg" alt="软件截图" loading="lazy">
+                                                </ul>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Product 8 -->
+                                        <div class="product-detail" id="product8">
+                                            <h3>poe本地改写文章软件</h3>
+                                            <div class="download-section">
+                                                <a href="https://pan.baidu.com/s/1dCUTcu3TZPItkPXv0OPvMA?pwd=ks5w" class="download-button">软件下载</a>
+                                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                                <a href="#contact" class="custom-button">软件定制</a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h4>功能特点：</h4>
+                                                <ul>
+                                                    <li>1.可以多线程处理，可以改写本地的wrod文档。</li>
+                                                    <li>2.市面上主流的都可以随时换着用，支持gpt3.5，gpt4.0，通义千问，Claude-3-Sonnet，Claude-3-Haiku，Web-Search，Assistant</li>
+                                                    <li>3.新增文章相似度检测，改写出来的文章和原文对比，可以设置相似度值，相似度高的删除</li>
+                                                    <li>4.新增文章排版功能，全文设置为宋体，重点内容加粗改色</li>
+                                                    <li>5.新增过滤小图片的功能，新增段落设置</li>
+                                                    <img src="./images/poe本地改写文章软件1.png" alt="软件截图" loading="lazy">
+                                                    <img src="./images/poe本地改写文章软件2.png" alt="软件截图" loading="lazy">
+                                                    <img src="./images/poe本地改写文章软件3.png" alt="软件截图" loading="lazy">
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                                          <!-- Product 9 -->
+                    <div class="product-detail" id="product9">
+                        <h3>百家号文章采集工具</h3>
+                        <div class="download-section">
+                            <a href="https://wwzg.lanzouq.com/b00rn82rze" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>支持采集文章链接和作者主页链接</li>
+                                <li>支持设定采集的时间，设定开始时间和结束时间</li>
+                                <li>支持设定采集的最小阅读量</li>
+                                <li>支持作者采集，保存多种格式，保存文章链接，保存docx，保存txt和图片</li>
+                                <img src="./images/百家采集1.png" alt="软件截图" loading="lazy">
+                                <img src="./images/百家采集2.png" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product 10 -->
+                    <div class="product-detail" id="product10">
+                        <h3>批量下载头条首页分类文章软件</h3>
+                        <div class="download-section">
+                            <a href="https://wwzg.lanzouq.com/imlyk2j0f1yh" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>批量下载头条首页分类文章软件</li>
+                                <li>驱动谷歌浏览器到头条首页去下载文章，不用登录头条账号</li>
+                                <li>可自定义下载的文章最低阅读量</li>
+                                <li>可自定义下载文章或者文章链接</li>
+                                <li>启动软件后，选择分类（比如历史）然后回车就开始运行。也可不选分类直接下载首页推荐</li>
+                                <img src="./images/批量下载头条首页分类文章1.png" alt="软件截图" loading="lazy">
+                                <img src="./images/批量下载头条首页分类文章2.png" alt="软件截图" loading="lazy">
+                                <img src="./images/批量下载头条首页分类文章3.png" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product 11 -->
+                    <div class="product-detail" id="product11">
+                        <h3>文章和视频标题检测工具</h3>
+                        <div class="download-section">
+                            <a href="https://wwzg.lanzouq.com/i1ise2j0fnlg" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>文章和视频标题检测工具</li>
+                                <li>标题是很重要的一项指标，过长无法成功发布，含有违禁词会导致账号封禁，另还有批量修改文章批量修改视频标题的软件</li>
+                                <li>可检测文章和视频的文件名字数长度</li>
+                                <li>可自定义文件名的字数长度，标点符号也算一个字数，另外根据百家标题规则，年份算2个字数</li>
+                                <li>可检测文章内容的字数</li>
+                                <li>可自定义违禁词，文件名含有违禁词就判断为不合格</li>
+                                <img src="./images/文章和视频标题检测工具1.png" alt="软件截图" loading="lazy">
+                                <img src="./images/文章和视频标题检测工具2.png" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product 12 -->
+                    <div class="product-detail" id="product12">
+                        <h3>poe批量修改文章标题软件</h3>
+                        <div class="download-section">
+                            <a href="https://wwzg.lanzouq.com/iIyBO2jpryqj" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>用poe模型批量修改文章标题</li>
+                                <li>可自定义模型</li>
+                                <li>可设置字数检测，超过规定的字数判为不合格</li>
+                                <li>可自定义标题指令</li>
+                                <li>可放入多个标题分批处理，一次处理10篇文章的标题</li>
+                                <img src="./images/poe改标题.png" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product 13 -->
+                    <div class="product-detail" id="product13">
+                        <h3>微头条批量采集改写发布软件</h3>
+                        <div class="download-section">
+                            <a href="https://wwzg.lanzouq.com/b00rn82rze" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>批量采集微头条或者头条链接，可自定义采集作者自定义链接采集图片加文章</li>
+                                <li>支持gpt/poe/kimi/通义千问，一键进行改写，可批量自动改写</li>
+                                <li>可设置多个指令进行改写，可多线程改写</li>
+                                <li>发布支持头条文章，微头条，模拟人工发布</li>
+                                <li>支持多账号登录循环自动发布，可设置静态或动态ip</li>
+                                <li>可自定义相似度，相似度高于设定值的下一轮再次改写</li>
+                                <img src="./images/微头条全能助手1.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/微头条全能助手2.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/微头条全能助手3.jpg" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product 14 -->
+                    <div class="product-detail" id="product14">
+                        <h3>批量改写视频标题软件</h3>
+                        <div class="download-section">
+                            <a href="https://pan.quark.cn/s/b16954ce347a" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>可自定义gpt3.5，gpt4.0改写，支持市面上大部分ai的api接口</li>
+                                <li>可自定义文件标题指令</li>
+                                <li>可多线程改写，100个视频几分钟改完</li>
+                                <li>支持多种视频格式，mp4，avi，mov，mkv支持</li>
+                                <img src="./images/批量改写视频文件标题软件1.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/批量改写视频文件标题软件2.jpg" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product 15 -->
+                    <div class="product-detail" id="product15">
+                        <h3>批量改写文章标题软件</h3>
+                        <div class="download-section">
+                            <a href="https://pan.quark.cn/s/615bac306148" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>可自定义gpt3.5，gpt4.0改写，支持市面上大部分ai的api接口</li>
+                                <li>可自定义文件标题指令，可使用中转api</li>
+                                <li>支持txt，docx格式的文件，改写文件名</li>
+                                <li>多线程运行，十钟改几百个</li>
+                                <img src="./images/批量改写文章标题软件1.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/批量改写文章标题软件2.jpg" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product 16 -->
+                    <div class="product-detail" id="product16">
+                        <h3>批量标题生成文章</h3>
+                        <div class="download-section">
+                            <a href="https://wwzg.lanzouq.com/iu9YK2j15m4j" class="download-button">软件下载</a>
+                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                            <a href="#contact" class="custom-button">软件定制</a>
+                        </div>
+                        <div class="product-info">
+                            <h4>功能特点：</h4>
+                            <ul>
+                                <li>自定义生成文章的关键词或者标题</li>
+                                <li>可自定义gpt3.5，gpt4.0改写，支持市面上大部分ai的api接口</li>
+                                <li>自义指令</li>
+                                <li>可多线程运行</li>
+                                <img src="./images/批量标题生成文章1.jpg" alt="软件截图" loading="lazy">
+                                <img src="./images/批量标题生成文章2.jpg" alt="软件截图" loading="lazy">
+                            </ul>
+                        </div>
+                    </div>
+                    
+                                       <!-- Product 17 -->
+                                       <div class="product-detail" id="product17">
+                                        <h3>易撰接口原创度批量检测</h3>
+                                        <div class="download-section">
+                                            <a href="https://wwzg.lanzouq.com/iqayy26swh4f" class="download-button">软件下载</a>
+                                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                            <a href="#contact" class="custom-button">软件定制</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4>功能特点：</h4>
+                                            <ul>
+                                                <li>易撰官方接口，批量多线程原创度检测</li>
+                                                <li>自定义设置原创度数值，低于设定的文章删除</li>
+                                                <li>高于设定原创度高的文章保存</li>
+                                                <li>检测过的文章自动记录，再次检测直接跳过</li>
+                                                <li>支持txt和docx格式</li>
+                                                <img src="./images/易撰接口原创度批量检测1.jpg" alt="软件截图" loading="lazy">
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Product 18 -->
+                                    <div class="product-detail" id="product18">
+                                        <h3>罐头自媒体批量ck登录软件</h3>
+                                        <div class="download-section">
+                                            <a href="https://wwzg.lanzouq.com/iyReq2j6dsla" class="download-button">软件下载</a>
+                                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                            <a href="#contact" class="custom-button">软件定制</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4>功能特点：</h4>
+                                            <ul>
+                                                <li>一键植入ck，一键导入几十几百个账号</li>
+                                                <li>不需要手动一个一个去登录</li>
+                                                <img src="./images/罐头自媒体批量ck登录软件1.jpg" alt="软件截图" loading="lazy">
+                                                <img src="./images/罐头自媒体批量ck登录软件2.jpg" alt="软件截图" loading="lazy">
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Product 19 -->
+                                    <div class="product-detail" id="product19">
+                                        <h3>小火花ck提取软件</h3>
+                                        <div class="download-section">
+                                            <a href="https://wwzg.lanzouq.com/iHbVp2j15jda" class="download-button">软件下载</a>
+                                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                            <a href="#contact" class="custom-button">软件定制</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4>功能特点：</h4>
+                                            <ul>
+                                                <li>支持百家号，快手、西瓜、今日头条ck提取</li>
+                                                <img src="./images/小火花ck提取软件.jpg" alt="软件截图" loading="lazy">
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Product 20 -->
+                                    <div class="product-detail" id="product20">
+                                        <h3>百家号图文发布软件</h3>
+                                        <div class="download-section">
+                                            <a href="https://wwzg.lanzouq.com/b00rnliz4f" class="download-button">软件下载</a>
+                                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                            <a href="#contact" class="custom-button">软件定制</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4>功能特点：</h4>
+                                            <ul>
+                                                <li>百家图文支持动态发布，多线程发布，内置ip更换api，模拟人工发布，减少封号风险</li>
+                                                <img src="./images/百家号发布软件.jpg" alt="软件截图" loading="lazy">
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Product 21 -->
+                                    <div class="product-detail" id="product21">
+                                        <h3>头条号图文发布软件</h3>
+                                        <div class="download-section">
+                                            <a href="https://wwzg.lanzouq.com/b00rnliz4f" class="download-button">软件下载</a>
+                                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                            <a href="#contact" class="custom-button">软件定制</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4>功能特点：</h4>
+                                            <ul>
+                                                <li>头条支持图文和微头条发布，多线程发布，内置ip更换api，模拟人工发布，减少封号风险</li>
+                                                <img src="./images/头条号发布软件.jpg" alt="软件截图" loading="lazy">
+                                            </ul>
+                                        </div>
+                                    </div>
+                
+                                    <!-- Product 22 -->
+                                    <div class="product-detail" id="product22">
+                                        <h3>批量原创视频软件</h3>
+                                        <div class="download-section">
+                                            <a href="https://wwzg.lanzouq.com/b00rnliz5g" class="download-button">软件下载</a>
+                                            <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                            <a href="#contact" class="custom-button">软件定制</a>
+                                        </div>
+                                        <div class="product-info">
+                                            <h4>功能特点：</h4>
+                                            <ul>
+                                                <li>文案改写，视频素材库下载原创视频，视频素材+文案合成配音加字幕</li>
+                                                <img src="./images/批量生成原创视频软件1.jpg" alt="软件截图" loading="lazy">
+                                                <img src="./images/批量生成原创视频软件2.jpg" alt="软件截图" loading="lazy">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="product-detail" id="product1">
-                            <h3>Deepseek文章改写软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/b00rnliz8j" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>最强大的Deepseek文章改写软件上线</li>
-<li>1.支持本地 Word 文章批量改写，可自定义输入输出目录，多线程处理提升效率。</li>
-<li>2.集成满血版 Deepseek 等多种模型，支持市面所有的主流模型，支持本地模型（需电脑配置，调用无费用），文章生成大纲、内容及标题改写环节均可自定义选用模型。</li>
-<li>3.能对文章图片进行裁剪、去水印处理。</li>
-<li>4.所有改写步骤都可自定义指令，精准满足不同改写需求。</li>
-<li>5.可设置处理完成后自动删除源文件、清理临时文件。</li>
-<li>6.能按自定义字数跳过过短文章，按自定义尺寸跳过过小图片。</li>
-<li>7.支持自定义屏蔽词设置，灵活过滤文章特定词汇。</li>
-                                    <img src="./images/Deepseek文章改写软件1.jpg" alt="��件截图">
-<img src="./images/Deepseek文章改写软件2.jpg" alt="��件截图">
-<img src="./images/Deepseek文章改写软件3.jpg" alt="��件截图">
-<img src="./images/Deepseek文章改写软件4.jpg" alt="��件截图">
-                                </ul>
+                    </section>
+                
+                    <!-- 代理加盟 -->
+                    <section class="agency" id="agency">
+                        <div class="container">
+                            <h2>代理加盟</h2>
+                            <div class="agency-content">
+                                <div class="agency-info">
+                                    <h3>专属代理特权</h3>
+                                    <ul>
+                                        <li>专属后台，自主开卡</li>
+                                        <li>统一5折优惠政策</li>
+                                        <li>独立品牌授权</li>
+                                        <li>专业远程支持</li>
+                                    </ul>
+                                </div>
+                                <div class="agency-image">
+                                    <img src="./images/代理后台.jpg" alt="代理后台展示" loading="lazy">
+                                </div>
                             </div>
                         </div>
-
-                        <div class="product-detail" id="product2">
-                            <h3>数字人短视频软件</h3>
-                            <div class="download-section">
-                                <a href="javascript:void(0)" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>数字人软件重磅来袭</li>
-<li>1.效果最逼真的数字人，极速生成口播视频</li>
-<li>2.只需要30秒视频上传就可定制专属数字人形象</li>
-<li>3.输入文案或者输入音频就可生成定制的数字人视频</li>
-<li>4.一次部署，永久免费使用，生成的视频都无需任何费用</li>
-<li>5.电脑配置要求：i5-12400 3050以上显卡 32G以上内存</li>
-<li>配置越好，生成的视频速度越快，上面的配置生成1分钟的视频需要10分钟左右</li>
-                                    <img src="./images/数字人1.png" alt="��件截图">
-<img src="./images/数字人2.png" alt="��件截图">
-<img src="./images/数字人3.png" alt="��件截图">
-<img src="./images/数字人4.png" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product3">
-                            <h3>POE官网采集改写软件</h3>
-                            <div class="download-section">
-                                <a href="https://pan.baidu.com/s/1DYtRvkX0msIJkDVkDY2BrQ?pwd=5f64" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>可以线程处理，一天处理几千几万篇文章，解放你的双手</li>
-<li>支持市面上主流AI模型：</li>
-<li>- GPT3.5/GPT4.0</li>
-<li>- 通义千问</li>
-<li>- Claude-3-Sonnet/Claude-3-Haiku</li>
-<li>- Web-Search/Assistant</li>
-<li>文章相似度智能检测，改写文章与原文对比，可设置相似度阈值</li>
-<li>专业文章排版功能，全文宋体设置，重点内容加粗颜色</li>
-                                    <img src="./images/poe1.jpg" alt="��件截图">
-<img src="./images/poe2.jpg" alt="��件截图">
-<img src="./images/poe3.jpg" alt="��件截图">
-<img src="./images/poe4.jpg" alt="��件截图">
-                                </ul>
+                    </section>
+                
+                    <!-- 联系我们 -->
+                    <section class="contact" id="contact">
+                        <div class="container">
+                            <h2>联系我们</h2>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="fab fa-weixin"></i>
+                                    <h3>客服微信</h3>
+                                    <p>abc765369</p>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-globe"></i>
+                                    <h3>官方网站</h3>
+                                    <p>备案号：粤ICP备20240301号</p>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-tools"></i>
+                                    <h3>技术支持</h3>
+                                    <p>提供远程指导服务</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="product-detail" id="product4">
-                            <h3>Per官网采集改写软件</h3>
-                            <div class="download-section">
-                                <a href="https://pan.quark.cn/s/f56891e3bdf7" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>超低成本，每天600次对话配额，相于POE和GPT官网六分之一费用</li>
-<li>支持顶级AI模型：</li>
-<li>- Claude 3.5 Sonnet</li>
-<li>- GPT-4</li>
-<li>- Claude 3 Opus</li>
-<li>- Llama 3.1 405B</li>
-<li>文章相似度智能检测，可设置相似度阈值过滤</li>
-<li>专业排版功能，支持字体设置重点内容样式定制</li>
-                                    <img src="./images/per1.jpg" alt="��件截图">
-<img src="./images/per2.jpg" alt="��件截图">
-                                </ul>
-                            </div>
+                    </section>
+                
+                    <!-- 页脚 -->
+                    <footer>
+                        <div class="container">
+                            <p>&copy; 2024 启航软件 版权所有</p>
                         </div>
-
-                        <div class="product-detail" id="product5">
-                            <h3>GPT官网采集改写软件</h3>
-                            <div class="download-section">
-                                <a href="javascript:void(0)" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>输入头条搜狐微信公众号链接，自动采集图片文章</li>
-<li>驱动浏览器访问gpt官网在网页端改写数据，保存成docx</li>
-<li>对接gpt官网运行，支持gpt4o以及最新模型</li>
-<li>可设置篇头篇尾</li>
-<li>可设置屏蔽词，可多线程运行</li>
-                                    <img src="./images/GPT官网采集改写软件.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product6">
-                            <h3>头条搜狐文章下载软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/b00rnliz9a" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>批量采集头条号搜狐号的图文</li>
-<li>放入链接就可以批量采集</li>
-<li>保存图文和文章为docx格式</li>
-<li>快速采集，100篇2分钟采集完成</li>
-                                    <img src="./images/采集头条1.png" alt="��件截图">
-<img src="./images/采集头条2.png" alt="��件截图">
-<img src="./images/采集头条3.png" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product7">
-                            <h3>GPT批量改写本地文章软件</h3>
-                            <div class="download-section">
-                                <a href="https://pan.quark.cn/s/e341afb4617d" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>支持txt、docx、pdf等多种格式文件批量导入</li>
-<li>支持GPT3.5/4.0等多个模型</li>
-<li>可自定义改写提示词和改写风格</li>
-<li>多线程并发处理，提高改写效率</li>
-<li>支持相似度检测，确保文章原创性</li>
-<li>支持批量导出Word文档</li>
-                                    <img src="./images/gpt本地文章1.jpg" alt="��件截图">
-<img src="./images/gpt本地文章2.jpg" alt="��件截图">
-<img src="./images/gpt本地文章3.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product8">
-                            <h3>poe 本地改写文章软件</h3>
-                            <div class="download-section">
-                                <a href="https://pan.baidu.com/s/1dCUTcu3TZPItkPXv0OPvMA?pwd=ks5w" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>1.可以多线程处理，可以改写本地的wrod文档。</li>
-<li>2.市面上主流的都可以随时换着用，支持gpt3.5，gpt4.0，通义千问，Claude-3-Sonnet，Claude-3-Haiku，Web-Search，Assistant</li>
-<li>3.新增文章相似度检测，改写出来的文章和原文对比，可以设置相似度值，相似度高的删除</li>
-<li>4.新增文章排版功能，全文设置为宋体，重点内容加粗改色</li>
-<li>5.新增过滤小图片的功能，新增段落设置</li>
-                                    <img src="./images/poe本地改写文章软件1.png" alt="��件截图">
-<img src="./images/poe本地改写文章软件2.png" alt="��件截图">
-<img src="./images/poe本地改写文章软件3.png" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product9">
-                            <h3>百家号文章采集工具</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/b00rnliz6h
-
-" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>支持采集文章链接和作者主页链接</li>
-<li>支持设定采集的时间，设定开始时间和结束时间</li>
-<li>支持设定采集的最小阅读量</li>
-<li>支持作者采集，保存多种格式，保存文章链接，保存docx，保存txt和图片</li>
-                                    <img src="./images/百家采集1.png" alt="��件截图">
-<img src="./images/百家采集2.png" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product10">
-                            <h3>批量下载头条首页分类文章软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/imlyk2j0f1yh" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>批量下载头条首页分类文章软件</li>
-<li>驱动谷歌浏览器到头条首页去下载文章，不用登录头条账号</li>
-<li>可自定义下载的文章最低阅读量</li>
-<li>可自定义下载文章或者文章链接</li>
-<li>启动软件后，选择分类（比如历史）然后回车就开始运行。也可不选分类直接下载首页推荐</li>
-                                    <img src="./images/批量下载头条首页分类文章1.png" alt="��件截图">
-<img src="./images/批量下载头条首页分类文章2.png" alt="��件截图">
-<img src="./images/批量下载头条首页分类文章3.png" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product11">
-                            <h3>文章和视频标题检测工具</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/i1ise2j0fnlg" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>文章和视频标题检测工具</li>
-<li>标题是很重要的一项指标，过长无法成功发布，含有违禁词会导致账号封禁，另还有批量修改文章批量修改视频标题的软件</li>
-<li>可检测文章和视频的文件名字数长度</li>
-<li>可自定义文件名的字数长度，标点符号也算一个字数，另外根据百家标题规则，年份算2个字数</li>
-<li>可检测文章内容的字数</li>
-<li>可自定义违禁词，文件名含有违禁词就判断为不合格</li>
-                                    <img src="./images/文章和视频标题检测工具1.png" alt="��件截图">
-<img src="./images/文章和视频标题检测工具2.png" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product12">
-                            <h3>poe批量修改文章标题软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/iIyBO2jpryqj
-
-" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>用poe模型批量修改文章标题</li>
-<li>可自定义模型</li>
-<li>可设置字数检测，超过规定的字数判为不合格</li>
-<li>可自定义标题指令</li>
-<li>可放入多个标题分批处理，一次处理10篇文章的标题</li>
-                                    <img src="./images/poe改标题.png" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product13">
-                            <h3>微头条批量采集改写发布软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/b00rn82rze" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>批量采集微头条或者头条链接，可自定义采集作者自定义链接采集图片加文章</li>
-<li>支持gpt/poe/kimi/通义千问，一键进行改写，可批量自动改写</li>
-<li>可设置多个指令进行改写，可多线程改写</li>
-<li>发布支持头条文章，微头条，模拟人工发布</li>
-<li>支持多账号登录循环自动发布，可设置静态或动态ip</li>
-<li>可自定义相似度，相似度高于设定值的下一轮再次改写</li>
-                                    <img src="./images/微头条全能助手1.jpg" alt="��件截图">
-<img src="./images/微头条全能助手2.jpg" alt="��件截图">
-<img src="./images/微头条全能助手3.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product14">
-                            <h3>批量改写视频标题软件</h3>
-                            <div class="download-section">
-                                <a href="https://pan.quark.cn/s/b16954ce347a" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>可自定义gpt3.5，gpt4.0改写，支持市面上大部分ai的api接口</li>
-<li>可自定义文件标题指令</li>
-<li>可多线程改写，100个视频几分钟改完</li>
-<li>支持多种视频格式，mp4，avi，mov，mkv支持</li>
-                                    <img src="./images/批量改写视频文件标题软件1.jpg" alt="��件截图">
-<img src="./images/批量改写视频文件标题软件2.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product15">
-                            <h3>批量改写文章标题软件</h3>
-                            <div class="download-section">
-                                <a href="https://pan.quark.cn/s/615bac306148" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>可自定义gpt3.5，gpt4.0改写，支持市面上大部分ai的api接口</li>
-<li>可自定义文件标题指令，可使用中转api</li>
-<li>支持txt，docx格式的文件，改写文件名</li>
-<li>多线程运行，十钟改几百个</li>
-                                    <img src="./images/批量改写文章标题软件1.jpg" alt="��件截图">
-<img src="./images/批量改写文章标题软件2.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product16">
-                            <h3>批量标题生成文章</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/iu9YK2j15m4j" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>自定义生成文章的关键词或者标题</li>
-<li>可自定义gpt3.5，gpt4.0改写，支持市面上大部分ai的api接口</li>
-<li>自义指令</li>
-<li>可多线程运行</li>
-                                    <img src="./images/批量标题生成文章1.jpg" alt="��件截图">
-<img src="./images/批量标题生成文章2.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product17">
-                            <h3>易撰接口原创度批量检测</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/iqayy26swh4f" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>易撰官方接口，批量多线程原创度检测</li>
-<li>自定义设置原创度数值，低于设定的文章删除</li>
-<li>高于设定原创度高的文章保存</li>
-<li>检测过的文章自动记录，再次检测直接跳过</li>
-<li>支持txt和docx格式</li>
-                                    <img src="./images/易撰接口原创度批量检测1.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product18">
-                            <h3>罐头自媒体批量ck登录软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/iyReq2j6dsla" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>一键植入ck，一键导入几十几百个账号</li>
-<li>不需要手动一个一个去登录</li>
-                                    <img src="./images/罐头自媒体批量ck登录软件1.jpg" alt="��件截图">
-<img src="./images/罐头自媒体批量ck登录软件2.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product19">
-                            <h3>小火花ck提取软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/iHbVp2j15jda" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>支持百家号，快手、西瓜、今日头条ck提取</li>
-                                    <img src="./images/小火花ck提取软件.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product20">
-                            <h3>百家号图文发布软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/b00rnliz4f
-" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>百家图文支持动态发布，多线程发布，内置ip更换api，模拟人工发布，减少封号风险</li>
-                                    <img src="./images/百家号发布软件.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product21">
-                            <h3>头条号图文发布软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/b00rnliz4f
-" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>头条支持图文和微头条发布，多线程发布，内置ip更换api，模拟人工发布，减少封号风险</li>
-                                    <img src="./images/头条号发布软件.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="product-detail" id="product22">
-                            <h3>批量原创视频软件</h3>
-                            <div class="download-section">
-                                <a href="https://wwzg.lanzouq.com/b00rnliz5g" class="download-button">软件下载</a>
-                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
-                                <a href="#contact" class="custom-button">软件定制</a>
-                            </div>
-                            <div class="product-info">
-                                <h4>功能特点：</h4>
-                                <ul>
-                                    <li>文案改写，视频素材库下载原创视频，视频素材+文案合成配音加字幕</li>
-                                    <img src="./images/批量生成原创视频软件1.jpg" alt="��件截图">
-<img src="./images/批量生成原创视频软件2.jpg" alt="��件截图">
-                                </ul>
-                            </div>
-                        </div>
-                    </div>iv>
-    </section>
-
-    <!-- 代理加盟 -->
-    <section class="agency" id="agency">
-        <div class="container">
-            <h2>代理加盟</h2>
-            <div class="agency-content">
-                <div class="agency-info">
-                    <h3>专属代理特权</h3>
-                    <ul>
-                        <li>专属后台，自主开卡</li>
-                        <li>统一5折优惠政策</li>
-                        <li>独立品牌授权</li>
-                        <li>专业远程支支持</li>
-                    </ul>
-                </div>
-                <div class="agency-image">
-                    <img src="./images/代理后台.jpg" alt="代理后台展示">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 联系我们 -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>联系我们</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fab fa-weixin"></i>
-                    <h3>客服微信</h3>
-                    <p>abc765369</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-globe"></i>
-                    <h3>官方网站</h3>
-              <p>备案号：粤ICP备20240301号</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-tools"></i>
-                    <h3>技术支持</h3>
-                    <p>提供远程指导服务</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 页脚 -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 启航软件 版权所有</p>
-        </div>
-    </footer>
-</body>
-</html> 
+                    </footer>
+                </body>
+                </html> 

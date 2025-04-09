@@ -8,7 +8,27 @@
     <!-- 引入字体图标 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
     <script src="./js/main.js"></script>
-</head>
+
+        <style>
+            .sidebar-item {
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+            .sidebar-item .software-name {
+                color: #333;
+                transition: all 0.3s ease;
+            }
+            .sidebar-item.active {
+                background-color: #0066cc;
+                border-radius: 4px;
+                padding: 2px 8px;
+            }
+            .sidebar-item.active .software-name {
+                color: #ffffff;
+                font-weight: bold;
+            }
+        </style>
+        </head>
 <body>
     <!-- 添加加载遮罩 -->
     <div id="loading-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #fff; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 9999;">
@@ -40,6 +60,7 @@
     </header>
 
     <!-- 首页幅 -->
+<!-- 首页幅 -->
     <section class="banner" id="home">
         <div class="container">
             <h1>启航软件</h1>
@@ -83,119 +104,124 @@
                 <div class="product-menu">
                     <ul>
 
-                            <li data-product="product1">
+                            <li data-product="product1" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                Deepseek文章改写软件
+                                <span class="software-name">Deepseek文章改写软件</span>
                             </li>
 
-                            <li data-product="product2">
+                            <li data-product="product2" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                数字人短视频软件
+                                <span class="software-name">数字人短视频软件</span>
                             </li>
 
-                            <li data-product="product3">
+                            <li data-product="product3" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                POE官网采集改写软件
+                                <span class="software-name">POE官网采集改写软件</span>
                             </li>
 
-                            <li data-product="product4">
+                            <li data-product="product4" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                Per官网采集改写软件
+                                <span class="software-name">Per官网采集改写软件</span>
                             </li>
 
-                            <li data-product="product5">
+                            <li data-product="product5" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                GPT官网采集改写软件
+                                <span class="software-name">GPT官网采集改写软件</span>
                             </li>
 
-                            <li data-product="product6">
+                            <li data-product="product6" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                头条搜狐文章下载软件
+                                <span class="software-name">头条搜狐文章下载软件</span>
                             </li>
 
-                            <li data-product="product7">
+                            <li data-product="product7" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                wrod文档批量处理软件
+                                <span class="software-name">wrod文档批量处理软件</span>
                             </li>
 
-                            <li data-product="product8">
+                            <li data-product="product8" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                GPT批量改写本地文章软件
+                                <span class="software-name">GPT批量改写本地文章软件</span>
                             </li>
 
-                            <li data-product="product9">
+                            <li data-product="product9" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                poe 本地改写文章软件
+                                <span class="software-name">poe 本地改写文章软件</span>
                             </li>
 
-                            <li data-product="product10">
+                            <li data-product="product10" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                百家号文章采集工具
+                                <span class="software-name">百家号文章采集工具</span>
                             </li>
 
-                            <li data-product="product11">
+                            <li data-product="product11" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                批量下载头条首页分类文章软件
+                                <span class="software-name">批量下载头条首页分类文章软件</span>
                             </li>
 
-                            <li data-product="product12">
+                            <li data-product="product12" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                文章和视频标题检测工具
+                                <span class="software-name">文章和视频标题检测工具</span>
                             </li>
 
-                            <li data-product="product13">
+                            <li data-product="product13" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                poe批量修改文章标题软件
+                                <span class="software-name">文本批量配音软件</span>
                             </li>
 
-                            <li data-product="product14">
+                            <li data-product="product14" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                微头条批量采集改写发布软件
+                                <span class="software-name">poe批量修改文章标题软件</span>
                             </li>
 
-                            <li data-product="product15">
+                            <li data-product="product15" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                批量改写视频标题软件
+                                <span class="software-name">微头条批量采集改写发布软件</span>
                             </li>
 
-                            <li data-product="product16">
+                            <li data-product="product16" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                批量改写文章标题软件
+                                <span class="software-name">批量改写视频标题软件</span>
                             </li>
 
-                            <li data-product="product17">
+                            <li data-product="product17" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                批量标题生成文章
+                                <span class="software-name">批量改写文章标题软件</span>
                             </li>
 
-                            <li data-product="product18">
+                            <li data-product="product18" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                易撰接口原创度批量检测
+                                <span class="software-name">批量标题生成文章</span>
                             </li>
 
-                            <li data-product="product19">
+                            <li data-product="product19" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                罐头自媒体批量ck登录软件
+                                <span class="software-name">易撰接口原创度批量检测</span>
                             </li>
 
-                            <li data-product="product20">
+                            <li data-product="product20" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                小火花ck提取软件
+                                <span class="software-name">罐头自媒体批量ck登录软件</span>
                             </li>
 
-                            <li data-product="product21">
+                            <li data-product="product21" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                百家号图文发布软件
+                                <span class="software-name">小火花ck提取软件</span>
                             </li>
 
-                            <li data-product="product22">
+                            <li data-product="product22" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                头条号图文发布软件
+                                <span class="software-name">百家号图文发布软件</span>
                             </li>
 
-                            <li data-product="product23">
+                            <li data-product="product23" class="sidebar-item">
                                 <i class="fas fa-angle-right"></i>
-                                批量原创视频软件
+                                <span class="software-name">头条号图文发布软件</span>
+                            </li>
+
+                            <li data-product="product24" class="sidebar-item">
+                                <i class="fas fa-angle-right"></i>
+                                <span class="software-name">批量原创视频软件</span>
                             </li></ul>
                 </div>
                 
@@ -228,10 +254,10 @@
 <li>5.可设置处理完成后自动删除源文件、清理临时文件。</li>
 <li>6.能按自定义字数跳过过短文章，按自定义尺寸跳过过小图片。</li>
 <li>7.支持自定义屏蔽词设置，灵活过滤文章特定词汇。</li>
-                                    <img src="./images/Deepseek文章改写软件1.jpg" alt="��件截图">
-<img src="./images/Deepseek文章改写软件2.jpg" alt="��件截图">
-<img src="./images/Deepseek文章改写软件3.jpg" alt="��件截图">
-<img src="./images/Deepseek文章改写软件4.jpg" alt="��件截图">
+                                    <img src="./images/Deepseek文章改写软件1.jpg" alt="软件截图">
+<img src="./images/Deepseek文章改写软件2.jpg" alt="软件截图">
+<img src="./images/Deepseek文章改写软件3.jpg" alt="软件截图">
+<img src="./images/Deepseek文章改写软件4.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -253,10 +279,10 @@
 <li>4.一次部署，永久免费使用，生成的视频都无需任何费用</li>
 <li>5.电脑配置要求：i5-12400 3050以上显卡 32G以上内存</li>
 <li>配置越好，生成的视频速度越快，上面的配置生成1分钟的视频需要10分钟左右</li>
-                                    <img src="./images/数字人1.png" alt="��件截图">
-<img src="./images/数字人2.png" alt="��件截图">
-<img src="./images/数字人3.png" alt="��件截图">
-<img src="./images/数字人4.png" alt="��件截图">
+                                    <img src="./images/数字人1.png" alt="软件截图">
+<img src="./images/数字人2.png" alt="软件截图">
+<img src="./images/数字人3.png" alt="软件截图">
+<img src="./images/数字人4.png" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -279,10 +305,10 @@
 <li>- Web-Search/Assistant</li>
 <li>文章相似度智能检测，改写文章与原文对比，可设置相似度阈值</li>
 <li>专业文章排版功能，全文宋体设置，重点内容加粗颜色</li>
-                                    <img src="./images/poe1.jpg" alt="��件截图">
-<img src="./images/poe2.jpg" alt="��件截图">
-<img src="./images/poe3.jpg" alt="��件截图">
-<img src="./images/poe4.jpg" alt="��件截图">
+                                    <img src="./images/poe1.jpg" alt="软件截图">
+<img src="./images/poe2.jpg" alt="软件截图">
+<img src="./images/poe3.jpg" alt="软件截图">
+<img src="./images/poe4.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -305,8 +331,8 @@
 <li>- Llama 3.1 405B</li>
 <li>文章相似度智能检测，可设置相似度阈值过滤</li>
 <li>专业排版功能，支持字体设置重点内容样式定制</li>
-                                    <img src="./images/per1.jpg" alt="��件截图">
-<img src="./images/per2.jpg" alt="��件截图">
+                                    <img src="./images/per1.jpg" alt="软件截图">
+<img src="./images/per2.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -326,7 +352,7 @@
 <li>对接gpt官网运行，支持gpt4o以及最新模型</li>
 <li>可设置篇头篇尾</li>
 <li>可设置屏蔽词，可多线程运行</li>
-                                    <img src="./images/GPT官网采集改写软件.jpg" alt="��件截图">
+                                    <img src="./images/GPT官网采集改写软件.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -345,9 +371,9 @@
 <li>放入链接就可以批量采集</li>
 <li>保存图文和文章为docx格式</li>
 <li>快速采集，100篇2分钟采集完成</li>
-                                    <img src="./images/采集头条1.png" alt="��件截图">
-<img src="./images/采集头条2.png" alt="��件截图">
-<img src="./images/采集头条3.png" alt="��件截图">
+                                    <img src="./images/采集头条1.png" alt="软件截图">
+<img src="./images/采集头条2.png" alt="软件截图">
+<img src="./images/采集头条3.png" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -369,11 +395,11 @@
 <li>3.文档分段，可以把一大段落分成设定的几句的段落</li>
 <li>4.可指定位置的文字加颜色加粗加下划线，也可以指定关键词</li>
 <li>5.设置屏蔽词，可以自定义设置屏蔽词，可设置删除屏蔽词或者删除屏蔽词所在的句子</li>
-                                    <img src="./images/wrod文档处理1.png" alt="��件截图">
-<img src="./images/wrod文档处理2.png" alt="��件截图">
-<img src="./images/wrod文档处理3.png" alt="��件截图">
-<img src="./images/wrod文档处理4.png" alt="��件截图">
-<img src="./images/wrod文档处理5.png" alt="��件截图">
+                                    <img src="./images/wrod文档处理1.png" alt="软件截图">
+<img src="./images/wrod文档处理2.png" alt="软件截图">
+<img src="./images/wrod文档处理3.png" alt="软件截图">
+<img src="./images/wrod文档处理4.png" alt="软件截图">
+<img src="./images/wrod文档处理5.png" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -394,9 +420,9 @@
 <li>多线程并发处理，提高改写效率</li>
 <li>支持相似度检测，确保文章原创性</li>
 <li>支持批量导出Word文档</li>
-                                    <img src="./images/gpt本地文章1.jpg" alt="��件截图">
-<img src="./images/gpt本地文章2.jpg" alt="��件截图">
-<img src="./images/gpt本地文章3.jpg" alt="��件截图">
+                                    <img src="./images/gpt本地文章1.jpg" alt="软件截图">
+<img src="./images/gpt本地文章2.jpg" alt="软件截图">
+<img src="./images/gpt本地文章3.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -416,9 +442,9 @@
 <li>3.新增文章相似度检测，改写出来的文章和原文对比，可以设置相似度值，相似度高的删除</li>
 <li>4.新增文章排版功能，全文设置为宋体，重点内容加粗改色</li>
 <li>5.新增过滤小图片的功能，新增段落设置</li>
-                                    <img src="./images/poe本地改写文章软件1.png" alt="��件截图">
-<img src="./images/poe本地改写文章软件2.png" alt="��件截图">
-<img src="./images/poe本地改写文章软件3.png" alt="��件截图">
+                                    <img src="./images/poe本地改写文章软件1.png" alt="软件截图">
+<img src="./images/poe本地改写文章软件2.png" alt="软件截图">
+<img src="./images/poe本地改写文章软件3.png" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -439,8 +465,8 @@
 <li>支持设定采集的时间，设定开始时间和结束时间</li>
 <li>支持设定采集的最小阅读量</li>
 <li>支持作者采集，保存多种格式，保存文章链接，保存docx，保存txt和图片</li>
-                                    <img src="./images/百家采集1.png" alt="��件截图">
-<img src="./images/百家采集2.png" alt="��件截图">
+                                    <img src="./images/百家采集1.png" alt="软件截图">
+<img src="./images/百家采集2.png" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -460,9 +486,9 @@
 <li>可自定义下载的文章最低阅读量</li>
 <li>可自定义下载文章或者文章链接</li>
 <li>启动软件后，选择分类（比如历史）然后回车就开始运行。也可不选分类直接下载首页推荐</li>
-                                    <img src="./images/批量下载头条首页分类文章1.png" alt="��件截图">
-<img src="./images/批量下载头条首页分类文章2.png" alt="��件截图">
-<img src="./images/批量下载头条首页分类文章3.png" alt="��件截图">
+                                    <img src="./images/批量下载头条首页分类文章1.png" alt="软件截图">
+<img src="./images/批量下载头条首页分类文章2.png" alt="软件截图">
+<img src="./images/批量下载头条首页分类文章3.png" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -483,13 +509,32 @@
 <li>可自定义文件名的字数长度，标点符号也算一个字数，另外根据百家标题规则，年份算2个字数</li>
 <li>可检测文章内容的字数</li>
 <li>可自定义违禁词，文件名含有违禁词就判断为不合格</li>
-                                    <img src="./images/文章和视频标题检测工具1.png" alt="��件截图">
-<img src="./images/文章和视频标题检测工具2.png" alt="��件截图">
+                                    <img src="./images/文章和视频标题检测工具1.png" alt="软件截图">
+<img src="./images/文章和视频标题检测工具2.png" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
                         <div class="product-detail" id="product13">
+                            <h3>文本批量配音软件</h3>
+                            <div class="download-section">
+                                <a href="https://pan.quark.cn/s/94da3e159de6" class="download-button">软件下载</a>
+                                <a href="http://woaiyanghang.cn/" class="buy-button">软件购买</a>
+                                <a href="#contact" class="custom-button">软件定制</a>
+                            </div>
+                            <div class="product-info">
+                                <h4>功能特点：</h4>
+                                <ul>
+                                    <li>支持word批量配音，支持txt文档批量配音，支持多种音色，支持调整语速，配音完全免费，极速处理配音，支持同步生成带时间戳的字幕文件</li>
+                                    <img src="./images/文本配音1.png" alt="软件截图">
+<img src="./images/文本配音2.png" alt="软件截图">
+<img src="./images/文本配音3.png" alt="软件截图">
+<img src="./images/文本配音4.png" alt="软件截图">
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="product-detail" id="product14">
                             <h3>poe批量修改文章标题软件</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/iIyBO2jpryqj
@@ -506,12 +551,12 @@
 <li>可设置字数检测，超过规定的字数判为不合格</li>
 <li>可自定义标题指令</li>
 <li>可放入多个标题分批处理，一次处理10篇文章的标题</li>
-                                    <img src="./images/poe改标题.png" alt="��件截图">
+                                    <img src="./images/poe改标题.png" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product14">
+                        <div class="product-detail" id="product15">
                             <h3>微头条批量采集改写发布软件</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/b00rn82rze" class="download-button">软件下载</a>
@@ -527,14 +572,14 @@
 <li>发布支持头条文章，微头条，模拟人工发布</li>
 <li>支持多账号登录循环自动发布，可设置静态或动态ip</li>
 <li>可自定义相似度，相似度高于设定值的下一轮再次改写</li>
-                                    <img src="./images/微头条全能助手1.jpg" alt="��件截图">
-<img src="./images/微头条全能助手2.jpg" alt="��件截图">
-<img src="./images/微头条全能助手3.jpg" alt="��件截图">
+                                    <img src="./images/微头条全能助手1.jpg" alt="软件截图">
+<img src="./images/微头条全能助手2.jpg" alt="软件截图">
+<img src="./images/微头条全能助手3.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product15">
+                        <div class="product-detail" id="product16">
                             <h3>批量改写视频标题软件</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/b00rnp1ojg
@@ -549,13 +594,13 @@
 <li>可自定义文件标题指令</li>
 <li>可多线程改写，100个视频几分钟改完</li>
 <li>支持多种视频格式，mp4，avi，mov，mkv支持</li>
-                                    <img src="./images/批量改写视频文件标题软件1.jpg" alt="��件截图">
-<img src="./images/批量改写视频文件标题软件2.jpg" alt="��件截图">
+                                    <img src="./images/批量改写视频文件标题软件1.jpg" alt="软件截图">
+<img src="./images/批量改写视频文件标题软件2.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product16">
+                        <div class="product-detail" id="product17">
                             <h3>批量改写文章标题软件</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/b00rnp1okh
@@ -567,17 +612,17 @@ https://wwzg.lanzouq.com/b00rnp1okh
                             <div class="product-info">
                                 <h4>功能特点：</h4>
                                 <ul>
-                                    <li>可自定义gpt3.5，gpt4.0改写，支持市面上大部分ai的api接口</li>
+                                    <li>可自定义gpt3.5，gpt4.0等多个接口改写，支持市面上大部分ai的api接口</li>
 <li>可自定义文件标题指令，可使用中转api</li>
 <li>支持txt，docx格式的文件，改写文件名</li>
 <li>多线程运行，十钟改几百个</li>
-                                    <img src="./images/批量改写文章标题软件1.jpg" alt="��件截图">
-<img src="./images/批量改写文章标题软件2.jpg" alt="��件截图">
+                                    <img src="./images/批量改写文章标题软件1.jpg" alt="软件截图">
+<img src="./images/批量改写文章标题软件2.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product17">
+                        <div class="product-detail" id="product18">
                             <h3>批量标题生成文章</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/iu9YK2j15m4j" class="download-button">软件下载</a>
@@ -591,13 +636,13 @@ https://wwzg.lanzouq.com/b00rnp1okh
 <li>可自定义gpt3.5，gpt4.0改写，支持市面上大部分ai的api接口</li>
 <li>自义指令</li>
 <li>可多线程运行</li>
-                                    <img src="./images/批量标题生成文章1.jpg" alt="��件截图">
-<img src="./images/批量标题生成文章2.jpg" alt="��件截图">
+                                    <img src="./images/批量标题生成文章1.jpg" alt="软件截图">
+<img src="./images/批量标题生成文章2.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product18">
+                        <div class="product-detail" id="product19">
                             <h3>易撰接口原创度批量检测</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/iqayy26swh4f" class="download-button">软件下载</a>
@@ -612,12 +657,12 @@ https://wwzg.lanzouq.com/b00rnp1okh
 <li>高于设定原创度高的文章保存</li>
 <li>检测过的文章自动记录，再次检测直接跳过</li>
 <li>支持txt和docx格式</li>
-                                    <img src="./images/易撰接口原创度批量检测1.jpg" alt="��件截图">
+                                    <img src="./images/易撰接口原创度批量检测1.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product19">
+                        <div class="product-detail" id="product20">
                             <h3>罐头自媒体批量ck登录软件</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/iyReq2j6dsla" class="download-button">软件下载</a>
@@ -629,13 +674,13 @@ https://wwzg.lanzouq.com/b00rnp1okh
                                 <ul>
                                     <li>一键植入ck，一键导入几十几百个账号</li>
 <li>不需要手动一个一个去登录</li>
-                                    <img src="./images/罐头自媒体批量ck登录软件1.jpg" alt="��件截图">
-<img src="./images/罐头自媒体批量ck登录软件2.jpg" alt="��件截图">
+                                    <img src="./images/罐头自媒体批量ck登录软件1.jpg" alt="软件截图">
+<img src="./images/罐头自媒体批量ck登录软件2.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product20">
+                        <div class="product-detail" id="product21">
                             <h3>小火花ck提取软件</h3>
                             <div class="download-section">
                                 <a href="https://k8rj.lanzoux.com/s/xhhzs" class="download-button">软件下载</a>
@@ -646,12 +691,12 @@ https://wwzg.lanzouq.com/b00rnp1okh
                                 <h4>功能特点：</h4>
                                 <ul>
                                     <li>支持百家号，快手、西瓜、今日头条ck提取</li>
-                                    <img src="./images/小火花ck提取软件.jpg" alt="��件截图">
+                                    <img src="./images/小火花ck提取软件.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product21">
+                        <div class="product-detail" id="product22">
                             <h3>百家号图文发布软件</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/b00rnliz4f
@@ -663,12 +708,12 @@ https://wwzg.lanzouq.com/b00rnp1okh
                                 <h4>功能特点：</h4>
                                 <ul>
                                     <li>百家图文支持动态发布，多线程发布，内置ip更换api，模拟人工发布，减少封号风险</li>
-                                    <img src="./images/百家号发布软件.jpg" alt="��件截图">
+                                    <img src="./images/百家号发布软件.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product22">
+                        <div class="product-detail" id="product23">
                             <h3>头条号图文发布软件</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/b00rnliz4f
@@ -680,12 +725,12 @@ https://wwzg.lanzouq.com/b00rnp1okh
                                 <h4>功能特点：</h4>
                                 <ul>
                                     <li>头条支持图文和微头条发布，多线程发布，内置ip更换api，模拟人工发布，减少封号风险</li>
-                                    <img src="./images/头条号发布软件.jpg" alt="��件截图">
+                                    <img src="./images/头条号发布软件.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="product-detail" id="product23">
+                        <div class="product-detail" id="product24">
                             <h3>批量原创视频软件</h3>
                             <div class="download-section">
                                 <a href="https://wwzg.lanzouq.com/b00rnliz5g" class="download-button">软件下载</a>
@@ -696,8 +741,8 @@ https://wwzg.lanzouq.com/b00rnp1okh
                                 <h4>功能特点：</h4>
                                 <ul>
                                     <li>文案改写，视频素材库下载原创视频，视频素材+文案合成配音加字幕</li>
-                                    <img src="./images/批量生成原创视频软件1.jpg" alt="��件截图">
-<img src="./images/批量生成原创视频软件2.jpg" alt="��件截图">
+                                    <img src="./images/批量生成原创视频软件1.jpg" alt="软件截图">
+<img src="./images/批量生成原创视频软件2.jpg" alt="软件截图">
                                 </ul>
                             </div>
                         </div>
@@ -755,5 +800,31 @@ https://wwzg.lanzouq.com/b00rnp1okh
             <p>&copy; 2024 启航软件 版权所有</p>
         </div>
     </footer>
-</body>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const sidebarItems = document.querySelectorAll('.sidebar-item');
+                const productDetails = document.querySelectorAll('.product-detail');
+                
+                sidebarItems.forEach(item => {
+                    item.addEventListener('click', function() {
+                        // 移除所有active类
+                        sidebarItems.forEach(i => i.classList.remove('active'));
+                        // 添加当前active类
+                        this.classList.add('active');
+                        
+                        // 显示对应的产品详情
+                        const productId = this.getAttribute('data-product');
+                        productDetails.forEach(detail => {
+                            if (detail.id === productId) {
+                                detail.style.display = 'block';
+                            } else {
+                                detail.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
+        </body>
 </html> 
